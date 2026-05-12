@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amerigroup 礼锦生 – Premium Hydrogen-Rich Natural Spring Water. Science-backed hydration for optimal health. 含氢饮用天然泉水。">
+  <title>Amerigroup 礼锦生 | 含氢饮用天然泉水 | Hydrogen Natural Spring Water</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" id="favicon" type="image/png" href="photo/H2 water礼锦生氢水_nobg.png">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="nav-brand" href="#">
+        <div class="logo-group">
+          <img src="photo/amerigroup-logo.png" alt="Amerigroup Logo" class="nav-logo logo-amerigroup">
+          <img src="photo/lks-logo.png" alt="LKS Logo" class="nav-logo">
+        </div>
+      </a>
+
+      <div class="nav-overlay" id="navOverlay"></div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link"><span class="en">About</span><span class="cn">关于我们</span></a></li>
+        <li><a href="#science" class="nav-link"><span class="en">Science</span><span class="cn">科学原理</span></a></li>
+        <li><a href="#benefits" class="nav-link"><span class="en">Benefits</span><span class="cn">健康益处</span></a></li>
+        <li><a href="#products" class="nav-link"><span class="en">Products</span><span class="cn">产品</span></a></li>
+        <li><a href="#research" class="nav-link"><span class="en">Research</span><span class="cn">研究资讯</span></a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span class="l-en">EN</span><span class="divider">|</span><span class="l-cn">中文</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════ HERO -->
+  <section class="hero" id="home">
+    <div class="hero-canvas">
+      <canvas id="bubbleCanvas"></canvas>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <div class="hero-badge fade-up">
+        <i class="fas fa-award"></i>
+        <span class="en">Premium Hydrogen Water · Natural Spring Source</span>
+        <span class="cn">顶级含氢水 · 天然泉水来源</span>
+      </div>
+      <h1 class="hero-title fade-up">
+        <span class="en">Li King Sun <em>礼锦生</em><br>Hydrogen Natural Spring Water</span>
+        <span class="cn">礼锦生<br>含氢饮用天然泉水</span>
+      </h1>
+      <p class="hero-sub fade-up">
+        <span class="en">Where Nature Meets Science – Premium H₂-Rich Spring Water<br>for a Healthier, More Vibrant Life</span>
+        <span class="cn">自然与科学的完美结合 – 顶级富氢天然泉水<br>为您开启更健康、更充沛的生命活力</span>
+      </p>
+      <div class="hero-cta fade-up">
+        <a href="#science" class="btn btn-primary">
+          <i class="fas fa-flask"></i>
+          <span class="en">Discover the Science</span>
+          <span class="cn">探索科学原理</span>
+        </a>
+        <a href="#products" class="btn btn-ghost">
+          <i class="fas fa-bottle-water"></i>
+          <span class="en">Our Product</span>
+          <span class="cn">查看产品</span>
+        </a>
+      </div>
+      <div class="hero-stats fade-up">
+        <div class="h-stat"><span class="h-num">1,600+</span><span class="h-lbl en">Research Studies</span><span class="h-lbl cn">项研究支持</span></div>
+        <div class="h-divider"></div>
+        <div class="h-stat"><span class="h-num">0.5–1.6</span><span class="h-lbl en">ppm H₂</span><span class="h-lbl cn">ppm 含氢浓度</span></div>
+        <div class="h-divider"></div>
+        <div class="h-stat"><span class="h-num">100%</span><span class="h-lbl en">Natural Spring</span><span class="h-lbl cn">天然泉水</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue"><i class="fas fa-chevron-down"></i></a>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-video-wrap cn">
+            <video class="about-video" autoplay muted loop playsinline controls>
+              <source src="photo/LKS English Video.MP4" type="video/mp4">
+            </video>
+          </div>
+          <div class="molecule-ring">
+            <svg viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg" class="mol-svg">
+              <defs>
+                <radialGradient id="gO" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#00c6ff" stop-opacity="0.4"/>
+                  <stop offset="100%" stop-color="#0052cc" stop-opacity="0.1"/>
+                </radialGradient>
+                <radialGradient id="gH" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.5"/>
+                  <stop offset="100%" stop-color="#0099ff" stop-opacity="0.1"/>
+                </radialGradient>
+              </defs>
+              <circle cx="130" cy="130" r="55" fill="url(#gO)" stroke="#00aaff" stroke-width="1.5" class="mol-o"/>
+              <circle cx="60"  cy="85"  r="34" fill="url(#gH)" stroke="#00d4ff" stroke-width="1.5" class="mol-h1"/>
+              <circle cx="200" cy="85"  r="34" fill="url(#gH)" stroke="#00d4ff" stroke-width="1.5" class="mol-h2"/>
+              <line x1="92"  y1="100" x2="130" y2="130" stroke="#0099ff" stroke-width="1.5"/>
+              <line x1="168" y1="100" x2="130" y2="130" stroke="#0099ff" stroke-width="1.5"/>
+              <text x="117" y="138" fill="#cce8ff" font-size="20" font-family="Montserrat" font-weight="700">O</text>
+              <text x="46"  y="93"  fill="#cce8ff" font-size="15" font-family="Montserrat" font-weight="700">H</text>
+              <text x="188" y="93"  fill="#cce8ff" font-size="15" font-family="Montserrat" font-weight="700">H</text>
+            </svg>
+            <div class="mol-label">H₂O + H₂</div>
+          </div>
+          <div class="about-badge-grid">
+            <div class="a-badge"><i class="fas fa-seedling"></i><span class="en">Natural</span><span class="cn">天然</span></div>
+            <div class="a-badge"><i class="fas fa-microscope"></i><span class="en">Science</span><span class="cn">科学</span></div>
+            <div class="a-badge"><i class="fas fa-star"></i><span class="en">Premium</span><span class="cn">顶级</span></div>
+            <div class="a-badge"><i class="fas fa-leaf"></i><span class="en">Pure</span><span class="cn">纯净</span></div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <p class="sec-tag"><span class="en">About Amerigroup 礼锦生</span><span class="cn">关于礼锦生</span></p>
+          <h2 class="sec-title">
+            <span class="en">Pioneering the Future<br>of Premium Hydration</span>
+            <span class="cn">引领高端水健康<br>未来的先行者</span>
+          </h2>
+          <p class="about-text">
+            <span class="en">Amerigroup proudly introduces <strong style="color:#000;">Li King Sun</strong> — a premium hydrogen-rich natural spring water crafted for the next generation of wellness-conscious consumers. Combining the purity of pristine natural spring sources with advanced molecular hydrogen (H₂) technology, Li King Sun delivers a refined hydration experience designed for modern lifestyles.</span>
+            <span class="cn"><strong>礼锦生</strong>由 Amerigroup 倾力推出，专为新一代健康意识消费者打造。将天然泉水的纯净与先进分子氢（H₂）技术相结合，礼锦生带来专为现代生活方式设计的精致补水体验。</span>
+          </p>
+          <p class="about-text">
+            <span class="en">Driven by innovation, quality, and wellness excellence, Li King Sun represents the convergence of nature and science. Molecular hydrogen has attracted growing global attention within the health and wellness community, supported by an expanding body of international scientific research exploring its potential role in supporting overall well-being and healthy living.</span>
+            <span class="cn">以创新、品质与健康卓越为驱动，礼锦生代表着自然与科学的融合。分子氢在健康与养生领域受到全球日益广泛的关注，国际科学研究不断拓展，探索其在支持整体健康与健康生活方式中的潜在作用。</span>
+          </p>
+          <p class="about-text">
+            <span class="en">With its clean taste, premium positioning, and forward-looking wellness concept, Li King Sun is more than water — it is a lifestyle statement centered on vitality, balance, and elevated daily hydration.</span>
+            <span class="cn">凭借其清爽口感、高端定位与前瞻性健康理念，礼锦生不仅仅是水——它是一种以活力、平衡与高品质日常补水为核心的生活方式宣言。</span>
+          </p>
+          <ul class="check-list">
+            <li><i class="fas fa-check-circle"></i><span class="en">Natural Spring Water Source</span><span class="cn">天然泉水来源</span></li>
+            <li><i class="fas fa-check-circle"></i><span class="en">High H₂ Concentration (0.5–1.6 ppm)</span><span class="cn">高含氢浓度（0.5–1.6 ppm）</span></li>
+            <li><i class="fas fa-check-circle"></i><span class="en">Negative ORP (-200 to -500 mV)</span><span class="cn">负氧化还原电位（-200 至 -500 mV）</span></li>
+            <li><i class="fas fa-check-circle"></i><span class="en">Balanced Mineral Profile</span><span class="cn">均衡天然矿物质</span></li>
+            <li><i class="fas fa-check-circle"></i><span class="en">International Quality Standards</span><span class="cn">国际品质标准认证</span></li>
+          </ul>
+          <div class="offices">
+            <div class="office-chip"><i class="fas fa-map-marker-alt"></i> Hong Kong</div>
+            <div class="office-chip"><i class="fas fa-map-marker-alt"></i> Beijing 北京</div>
+            <div class="office-chip"><i class="fas fa-map-marker-alt"></i> Vancouver</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ SCIENCE -->
+  <section class="science section" id="science">
+    <div class="science-bg-wrap">
+      <div class="science-bg"></div>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="sec-tag light"><span class="en">The Science</span><span class="cn">科学原理</span></p>
+        <h2 class="sec-title light">
+          <span class="en">Why Molecular Hydrogen?</span>
+          <span class="cn">为什么选择分子氢？</span>
+        </h2>
+        <p class="sec-desc light">
+          <span class="en">A 2007 landmark study in <em>Nature Medicine</em> established H₂ as a selective therapeutic antioxidant — igniting 1,600+ subsequent peer-reviewed studies across 170+ disease models.</span>
+          <span class="cn">2007年《自然医学》里程碑式研究证实H₂是选择性治疗性抗氧化剂，由此引发超过1,600项涵盖170+疾病模型的同行评审研究。</span>
+        </p>
+      </div>
+
+      <div class="science-cards">
+        <div class="sci-card reveal">
+          <div class="sci-icon"><i class="fas fa-atom"></i></div>
+          <h3><span class="en">Selective Antioxidant</span><span class="cn">选择性抗氧化</span></h3>
+          <p><span class="en">H₂ selectively neutralises the most cytotoxic free radicals (•OH &amp; ONOO⁻) while preserving beneficial reactive oxygen species — unlike conventional antioxidants that indiscriminately quench all ROS.</span><span class="cn">H₂选择性中和最具细胞毒性的自由基（•OH和ONOO⁻），同时保留有益活性氧，这是传统抗氧化剂无法实现的精准保护。</span></p>
+        </div>
+        <div class="sci-card reveal">
+          <div class="sci-icon"><i class="fas fa-dna"></i></div>
+          <h3><span class="en">Deep Cell Penetration</span><span class="cn">深层细胞渗透</span></h3>
+          <p><span class="en">As the smallest molecule known, H₂ effortlessly crosses all biological membranes — including the blood-brain barrier — delivering antioxidant protection at the deepest cellular level.</span><span class="cn">H₂是已知最小的分子，能毫不费力地穿越所有生物膜，包括血脑屏障，在最深层的细胞层面提供抗氧化保护。</span></p>
+        </div>
+        <div class="sci-card reveal">
+          <div class="sci-icon"><i class="fas fa-flask"></i></div>
+          <h3><span class="en">Gene Expression</span><span class="cn">基因表达调节</span></h3>
+          <p><span class="en">Emerging research shows H₂ modulates gene expression, activating protective pathways like Nrf2 while suppressing pro-inflammatory NF-κB signalling — a truly systemic health benefit.</span><span class="cn">新兴研究表明H₂调节基因表达，激活Nrf2等保护通路，同时抑制促炎NF-κB信号传导，提供真正的系统性健康益处。</span></p>
+        </div>
+      </div>
+
+      <blockquote class="sci-quote reveal">
+        <p class="en">"Hydrogen acts as a therapeutic antioxidant by selectively reducing cytotoxic oxygen radicals."</p>
+        <p class="cn">「氢气通过选择性还原细胞毒性氧自由基，发挥治疗性抗氧化作用。」</p>
+        <cite>— <a href="https://www.nature.com/articles/nm1577" target="_blank" rel="noopener"><em>Nature Medicine</em>, 2007 · Ohsawa et al.</a></cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ BENEFITS -->
+  <section class="benefits section" id="benefits">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="sec-tag"><span class="en">Health Benefits</span><span class="cn">健康益处</span></p>
+        <h2 class="sec-title">
+          <span class="en">The Power of Hydrogen Water</span>
+          <span class="cn">含氢水的健康力量</span>
+        </h2>
+      </div>
+      <div class="benefits-grid">
+
+        <div class="ben-card reveal">
+          <div class="ben-icon" style="--ic:#0099ff;"><i class="fas fa-shield-halved"></i></div>
+          <div class="ben-card-body">
+            <h3><span class="en">Powerful Antioxidant</span><span class="cn">强效抗氧化</span></h3>
+            <p><span class="en">Clinical studies show 39% increase in SOD enzyme activity and 43% decrease in oxidative stress markers (TBARS) after 8 weeks of regular hydrogen water consumption.</span><span class="cn">临床研究显示，规律饮用含氢水8周后，SOD酶活性提升39%，氧化应激标志物（TBARS）降低43%。</span></p>
+          </div>
+        </div>
+
+        <div class="ben-card reveal">
+          <div class="ben-icon" style="--ic:#00c4ff;"><i class="fas fa-fire-flame-curved"></i></div>
+          <div class="ben-card-body">
+            <h3><span class="en">Anti-Inflammatory</span><span class="cn">抗炎消炎</span></h3>
+            <p><span class="en">Significantly reduces pro-inflammatory cytokines and markers. Peer-reviewed research confirms benefits for inflammatory pain, IBD, and chronic inflammatory conditions.</span><span class="cn">显著降低促炎细胞因子和炎症标志物。同行评审研究证实对炎症性疼痛、IBD及慢性炎症疾病有益。</span></p>
+          </div>
+        </div>
+
+        <div class="ben-card reveal">
+          <div class="ben-icon" style="--ic:#00e0ff;"><i class="fas fa-bolt"></i></div>
+          <div class="ben-card-body">
+            <h3><span class="en">Enhanced Energy</span><span class="cn">提升活力</span></h3>
+            <p><span class="en">Supports mitochondrial function and ATP production, resulting in improved energy levels, reduced fatigue, and enhanced physical performance and endurance.</span><span class="cn">支持线粒体功能和ATP产生，提升能量水平，减少疲劳，增强体能表现与耐力。</span></p>
+          </div>
+        </div>
+
+        <div class="ben-card reveal">
+          <div class="ben-icon" style="--ic:#0066ff;"><i class="fas fa-brain"></i></div>
+          <div class="ben-card-body">
+            <h3><span class="en">Brain & Cognitive Health</span><span class="cn">大脑与认知健康</span></h3>
+            <p><span class="en">H₂ crosses the blood-brain barrier, providing neuroprotection, supporting memory, focus, and mood. Studies show promising results for neurodegenerative condition prevention.</span><span class="cn">H₂穿越血脑屏障，提供神经保护，支持记忆力、专注力与情绪。研究显示对预防神经退行性疾病有望效果。</span></p>
+          </div>
+        </div>
+
+        <div class="ben-card reveal">
+          <div class="ben-icon" style="--ic:#0052cc;"><i class="fas fa-heart-pulse"></i></div>
+          <div class="ben-card-body">
+            <h3><span class="en">Cardiovascular Support</span><span class="cn">心血管健康</span></h3>
+            <p><span class="en">Research indicates hydrogen water may help improve lipid profiles, reduce arterial stiffness, lower blood pressure, and provide comprehensive cardiovascular protection.</span><span class="cn">研究表明含氢水有助于改善血脂状况、降低动脉硬度、调节血压，提供全面的心血管保护。</span></p>
+          </div>
+        </div>
+
+        <div class="ben-card reveal">
+          <div class="ben-icon" style="--ic:#003d99;"><i class="fas fa-dumbbell"></i></div>
+          <div class="ben-card-body">
+            <h3><span class="en">Athletic Recovery</span><span class="cn">运动恢复</span></h3>
+            <p><span class="en">Reduces exercise-induced oxidative stress and lactic acid build-up, leading to faster muscle recovery, reduced soreness, and improved athletic performance.</span><span class="cn">减少运动引起的氧化应激和乳酸堆积，加速肌肉恢复，减轻酸痛，提升运动表现。</span></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ STATS BAND -->
+  <div class="stats-band">
+    <div class="container">
+      <div class="stats-row">
+        <div class="st-item">
+          <div class="st-val">
+            <span class="st-num" data-target="1600">0</span><span class="st-suffix">+</span>
+          </div>
+          <span class="st-lbl en">Scientific Studies</span>
+          <span class="st-lbl cn">项科学研究</span>
+        </div>
+        <div class="st-div"></div>
+        <div class="st-item">
+          <div class="st-val">
+            <span class="st-num" data-target="170">0</span><span class="st-suffix">+</span>
+          </div>
+          <span class="st-lbl en">Disease Models Studied</span>
+          <span class="st-lbl cn">种疾病模型研究</span>
+        </div>
+        <div class="st-div"></div>
+        <div class="st-item">
+          <div class="st-val">
+            <span class="st-num" data-target="39">0</span><span class="st-suffix">%</span>
+          </div>
+          <span class="st-lbl en">Increase in SOD Activity</span>
+          <span class="st-lbl cn">SOD酶活性提升</span>
+        </div>
+        <div class="st-div"></div>
+        <div class="st-item">
+          <div class="st-val">
+            <span class="st-num" data-target="43">0</span><span class="st-suffix">%</span>
+          </div>
+          <span class="st-lbl en">Decrease in Oxidative Stress</span>
+          <span class="st-lbl cn">氧化应激指标降低</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ PRODUCTS -->
+  <section class="products section" id="products">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="sec-tag"><span class="en">Our Product</span><span class="cn">我们的产品</span></p>
+        <h2 class="sec-title">
+          <span class="en">Li King Sun Hydrogen Spring Water</span>
+          <span class="cn">礼锦生 · 含氢饮用天然泉水</span>
+        </h2>
+      </div>
+      <div class="product-layout">
+        <div class="product-image-wrap reveal">
+          <img src="photo/H2 water LKS nobg.png" alt="礼锦生 Hydrogen Spring Water" class="product-main-img">
+        </div>
+
+        <div class="product-details reveal">
+          <h3>
+            <span class="en">Li King Sun · Natural Hydrogen Spring Water</span>
+            <span class="cn">礼锦生 · 含氢饮用天然泉水</span>
+          </h3>
+          <p>
+            <span class="en">Experience the pinnacle of premium hydration. Each bottle of Li King Sun combines the purity of natural spring water with dissolved molecular hydrogen — delivering both exceptional taste and science-backed health benefits in every sip.</span>
+            <span class="cn">体验顶级健康饮水的极致。每瓶礼锦生将天然泉水的纯净与溶解分子氢完美结合——每一口都带来卓越口感与科学验证的健康益处。</span>
+          </p>
+
+          <div class="spec-table">
+            <div class="spec-row">
+              <span class="spec-k en">H₂ Concentration</span>
+              <span class="spec-k cn">含氢浓度</span>
+              <span class="spec-v">0.5 – 1.6 ppm</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-k en">ORP Value</span>
+              <span class="spec-k cn">氧化还原电位</span>
+              <span class="spec-v">−200 to −500 mV</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-k en">pH Level</span>
+              <span class="spec-k cn">酸碱度</span>
+              <span class="spec-v">7.0 – 8.0</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-k en">Water Source</span>
+              <span class="spec-k cn">水源</span>
+              <span class="spec-v en">Natural Spring</span>
+              <span class="spec-v cn">天然泉水</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-k en">Minerals</span>
+              <span class="spec-k cn">矿物质</span>
+              <span class="spec-v en">Naturally Balanced</span>
+              <span class="spec-v cn">天然均衡</span>
+            </div>
+          </div>
+
+          <div class="product-features">
+            <span class="pf-tag"><i class="fas fa-check"></i> <span class="en">No additives</span><span class="cn">无添加</span></span>
+            <span class="pf-tag"><i class="fas fa-check"></i> <span class="en">Non-GMO</span><span class="cn">非转基因</span></span>
+            <span class="pf-tag"><i class="fas fa-check"></i> <span class="en">BPA-Free</span><span class="cn">不含BPA</span></span>
+            <span class="pf-tag"><i class="fas fa-check"></i> <span class="en">Premium Grade</span><span class="cn">顶级品质</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ RESEARCH -->
+  <section class="research section" id="research">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="sec-tag"><span class="en">Research &amp; Articles</span><span class="cn">研究与资讯</span></p>
+        <h2 class="sec-title">
+          <span class="en">Stay Informed</span>
+          <span class="cn">了解最新资讯</span>
+        </h2>
+      </div>
+
+      <div class="research-grid" style="display:none;">
+        <a href="https://mp.weixin.qq.com/s/GjQfeyX3bArAQVOu77W_nQ" target="_blank" rel="noopener" class="res-card reveal">
+          <div class="res-header"><i class="fab fa-weixin"></i><span class="res-src">WeChat</span></div>
+          <div class="res-body">
+            <h4><span class="en">Hydrogen Water: Health Benefits Explained</span><span class="cn">含氢水：健康益处深度解析</span></h4>
+            <p><span class="en">Discover the latest research on hydrogen water and its remarkable impact on human health and longevity.</span><span class="cn">探索含氢水最新研究及其对人体健康与长寿的显著影响。</span></p>
+          </div>
+          <span class="res-read"><span class="en">Read Article</span><span class="cn">阅读文章</span> <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="https://mp.weixin.qq.com/s/AuH1R-xNJJsJOAfQcqrrgQ" target="_blank" rel="noopener" class="res-card reveal">
+          <div class="res-header"><i class="fab fa-weixin"></i><span class="res-src">WeChat</span></div>
+          <div class="res-body">
+            <h4><span class="en">Natural Spring Water Science</span><span class="cn">天然泉水的科学奥秘</span></h4>
+            <p><span class="en">Explore the science behind natural spring water and the technology of hydrogen enrichment.</span><span class="cn">探索天然泉水背后的科学，以及富氢技术的奥秘。</span></p>
+          </div>
+          <span class="res-read"><span class="en">Read Article</span><span class="cn">阅读文章</span> <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="https://mp.weixin.qq.com/s/1a4kfj_3SqJZV0iMxVtNDA" target="_blank" rel="noopener" class="res-card reveal">
+          <div class="res-header"><i class="fab fa-weixin"></i><span class="res-src">WeChat</span></div>
+          <div class="res-body">
+            <h4><span class="en">The Antioxidant Power of H₂</span><span class="cn">H₂的强效抗氧化力量</span></h4>
+            <p><span class="en">Understanding the unique selective antioxidant mechanism that makes molecular hydrogen exceptional.</span><span class="cn">深入了解分子氢独特的选择性抗氧化机制，探索其卓越之处。</span></p>
+          </div>
+          <span class="res-read"><span class="en">Read Article</span><span class="cn">阅读文章</span> <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="https://mp.weixin.qq.com/s/nE2wfGf8Z1wAS1bEiTiNEg" target="_blank" rel="noopener" class="res-card reveal">
+          <div class="res-header"><i class="fab fa-weixin"></i><span class="res-src">WeChat</span></div>
+          <div class="res-body">
+            <h4><span class="en">Hydrogen Water &amp; Modern Wellness</span><span class="cn">含氢水与现代健康生活</span></h4>
+            <p><span class="en">How hydrogen water integrates seamlessly into the modern health-conscious lifestyle.</span><span class="cn">含氢水如何无缝融入现代注重健康的生活方式。</span></p>
+          </div>
+          <span class="res-read"><span class="en">Read Article</span><span class="cn">阅读文章</span> <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="https://mp.weixin.qq.com/s/_KdVF53W9YU6gFf3iPGvPw" target="_blank" rel="noopener" class="res-card reveal">
+          <div class="res-header"><i class="fab fa-weixin"></i><span class="res-src">WeChat</span></div>
+          <div class="res-body">
+            <h4><span class="en">Premium Water Quality Standards</span><span class="cn">顶级饮用水品质标准</span></h4>
+            <p><span class="en">Our uncompromising commitment to quality assurance at every stage of production.</span><span class="cn">我们在每一个生产阶段对品质保证的坚定承诺。</span></p>
+          </div>
+          <span class="res-read"><span class="en">Read Article</span><span class="cn">阅读文章</span> <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="https://mp.weixin.qq.com/s/IG7YGonNfBGEz4rGiK74TA" target="_blank" rel="noopener" class="res-card reveal">
+          <div class="res-header"><i class="fab fa-weixin"></i><span class="res-src">WeChat</span></div>
+          <div class="res-body">
+            <h4><span class="en">The Future of Health Beverages</span><span class="cn">健康饮料的未来</span></h4>
+            <p><span class="en">Why hydrogen water is at the forefront of the next generation of premium health beverages.</span><span class="cn">为何含氢水引领下一代顶级健康饮料的发展潮流。</span></p>
+          </div>
+          <span class="res-read"><span class="en">Read Article</span><span class="cn">阅读文章</span> <i class="fas fa-arrow-right"></i></span>
+        </a>
+      </div>
+
+      <div class="journals-band reveal">
+        <p class="journals-title en">Peer-Reviewed Publications Supporting Hydrogen Water Science:</p>
+        <p class="journals-title cn">支持含氢水科学的同行评审发表：</p>
+        <div class="journals-row">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10967432/" target="_blank" class="j-chip">NIH / PMC Research</a>
+          <a href="https://www.nature.com/articles/s41598-020-68930-2" target="_blank" class="j-chip">Nature Scientific Reports</a>
+          <a href="https://www.mdpi.com/2076-3921/13/3/313" target="_blank" class="j-chip">MDPI Antioxidants</a>
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2831093/" target="_blank" class="j-chip">PMC Pilot Study</a>
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10816294/" target="_blank" class="j-chip">PMC H₂ Water Review</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="f-brand">
+            <div class="logo-group">
+              <img src="photo/amerigroup-logo.png" alt="Amerigroup" class="f-logo logo-amerigroup">
+              <img src="photo/lks-logo.png" alt="LKS" class="f-logo">
+            </div>
+            <div class="f-name">
+              <strong>AMERIGROUP</strong><br>
+              <span>礼锦生 · 含氢饮用天然泉水</span>
+            </div>
+            <p class="f-desc en">Premium hydrogen-rich natural spring water for a healthier, more vibrant life.</p>
+            <p class="f-desc cn">顶级含氢天然泉水，为更健康、更充沛的生命注入活力。</p>
+          </div>
+
+          <div class="f-col">
+            <h5><span class="en">Navigation</span><span class="cn">导航</span></h5>
+            <ul>
+              <li><a href="#about"><span class="en">About Us</span><span class="cn">关于我们</span></a></li>
+              <li><a href="#science"><span class="en">The Science</span><span class="cn">科学原理</span></a></li>
+              <li><a href="#benefits"><span class="en">Health Benefits</span><span class="cn">健康益处</span></a></li>
+              <li><a href="#products"><span class="en">Our Product</span><span class="cn">我们的产品</span></a></li>
+              <li><a href="#research"><span class="en">Research</span><span class="cn">研究资讯</span></a></li>
+            </ul>
+          </div>
+
+          <div class="f-col" style="display:none;">
+            <h5><span class="en">WeChat Articles</span><span class="cn">微信文章</span></h5>
+            <ul>
+              <li><a href="https://mp.weixin.qq.com/s/GjQfeyX3bArAQVOu77W_nQ" target="_blank"><span class="en">Health Benefits</span><span class="cn">健康益处</span></a></li>
+              <li><a href="https://mp.weixin.qq.com/s/AuH1R-xNJJsJOAfQcqrrgQ" target="_blank"><span class="en">Spring Water Science</span><span class="cn">泉水科学</span></a></li>
+              <li><a href="https://mp.weixin.qq.com/s/1a4kfj_3SqJZV0iMxVtNDA" target="_blank"><span class="en">Antioxidant Power</span><span class="cn">抗氧化力量</span></a></li>
+              <li><a href="https://mp.weixin.qq.com/s/nE2wfGf8Z1wAS1bEiTiNEg" target="_blank"><span class="en">Wellness Lifestyle</span><span class="cn">健康生活</span></a></li>
+              <li><a href="https://mp.weixin.qq.com/s/_KdVF53W9YU6gFf3iPGvPw" target="_blank"><span class="en">Quality Standards</span><span class="cn">品质标准</span></a></li>
+              <li><a href="https://mp.weixin.qq.com/s/IG7YGonNfBGEz4rGiK74TA" target="_blank"><span class="en">Future of H₂O</span><span class="cn">健康饮料未来</span></a></li>
+            </ul>
+          </div>
+
+          <div class="f-col">
+            <h5><span class="en">Research</span><span class="cn">研究论文</span></h5>
+            <ul>
+              <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10967432/" target="_blank">NIH / PMC 2024</a></li>
+              <li><a href="https://www.nature.com/articles/s41598-020-68930-2" target="_blank">Nature Sci. Reports</a></li>
+              <li><a href="https://www.mdpi.com/2076-3921/13/3/313" target="_blank">MDPI Antioxidants</a></li>
+              <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2831093/" target="_blank">PMC Pilot Study</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Amerigroup International · 礼锦生含氢饮用天然泉水<br class="mobile-br"> · All Rights Reserved</p>
+        <p class="disclaimer en">These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+        <p class="disclaimer cn">以上声明未经FDA评估，本产品不用于诊断、治疗、治愈或预防任何疾病。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    (function() {
+      const favicon = document.getElementById('favicon');
+      const canvas  = document.createElement('canvas');
+      canvas.width  = 64;
+      canvas.height = 64;
+      const ctx = canvas.getContext('2d');
+      const img = new Image();
+      img.src = 'photo/H2 water礼锦生氢水_nobg.png';
+      img.onload = function() {
+        let angle = 0;
+        function draw() {
+          ctx.clearRect(0, 0, 64, 64);
+          const scaleX = Math.abs(Math.cos(angle)); // 3-D flip on Y-axis
+          const tilt   = Math.sin(angle) * 0.18;    // slight Z-tilt
+          ctx.save();
+          ctx.translate(32, 32);
+          ctx.transform(scaleX, tilt, -tilt, 1, 0, 0);
+          ctx.drawImage(img, -32, -32, 64, 64);
+          ctx.restore();
+          favicon.href = canvas.toDataURL('image/png');
+          angle += 0.045;
+          requestAnimationFrame(draw);
+        }
+        draw();
+      };
+    })();
+  </script>
+</body>
+</html>
