@@ -393,10 +393,6 @@ button { cursor: pointer; border: none; background: none; }
   display: block;
   border-radius: 14px;
 }
-[data-lang="cn"] .about-video {
-  height: 460px;
-  object-fit: cover;
-}
 
 .molecule-ring {
   position: relative;
