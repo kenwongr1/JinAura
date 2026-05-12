@@ -46,6 +46,21 @@ button { cursor: pointer; border: none; background: none; }
 [data-lang="en"] .cn { display: none !important; }
 [data-lang="cn"] .en { display: none !important; }
 
+/* Video switcher: keep both videos in DOM (no display:none) so playback
+   doesn't reset on language toggle. Inactive wrap is lifted out of flow. */
+.about-video-switcher {
+  position: relative;
+  width: 100%;
+}
+[data-lang="en"] .about-video-wrap.cn,
+[data-lang="cn"] .about-video-wrap.en {
+  display: block !important;
+  position: absolute;
+  top: 0; left: 0; width: 100%;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 /* ââ Container / Section ââ */
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 .section { padding: 100px 0; position: relative; }

@@ -12,6 +12,13 @@ const LANG_KEY = 'ag_lang';
 function setLang(lang) {
   html.setAttribute('data-lang', lang);
   localStorage.setItem(LANG_KEY, lang);
+  document.querySelectorAll('.about-video-wrap').forEach(wrap => {
+    const video = wrap.querySelector('video');
+    if (!video) return;
+    const isActive = (lang === 'cn' && wrap.classList.contains('cn')) ||
+                     (lang === 'en' && wrap.classList.contains('en'));
+    isActive ? video.play() : video.pause();
+  });
 }
 (function initLang() {
   setLang(localStorage.getItem(LANG_KEY) || 'en');
