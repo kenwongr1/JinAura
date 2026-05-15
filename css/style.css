@@ -570,21 +570,16 @@ button { cursor: pointer; border: none; background: none; }
 
 .product-layout {
   display: grid;
-  grid-template-columns: 30% 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 24px;
   align-items: center;
 }
 .product-image-wrap {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-.product-cans {
-  display: flex;
-  justify-content: center;
   align-items: flex-end;
-  gap: 12px;
-  width: 100%;
+  max-width: 180px;
+  margin: 0 auto;
 }
 .product-main-img {
   width: 100%;
@@ -891,7 +886,8 @@ button { cursor: pointer; border: none; background: none; }
 @media (max-width: 1024px) {
   .about-grid     { grid-template-columns: 1fr; gap: 48px; }
   .about-visual   { flex-direction: row; flex-wrap: wrap; justify-content: center; }
-  .product-layout { grid-template-columns: 1fr; gap: 48px; }
+  .product-layout { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .product-layout .product-details { grid-column: 1 / -1; }
   .product-bottle-wrap { display: none; }
   .science-cards  { grid-template-columns: 1fr 1fr; }
   .benefits-grid  { grid-template-columns: 1fr 1fr; }
