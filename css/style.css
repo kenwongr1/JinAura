@@ -870,8 +870,8 @@ button { cursor: pointer; border: none; background: none; }
   border-top: 1.5px solid rgba(0,140,200,0.2);
   padding: 68px 0 44px;
 }
-.footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 48px; }
-.f-brand { display: flex; flex-direction: column; gap: 14px; }
+.footer-grid { display: flex; align-items: flex-start; gap: 48px; }
+.f-brand { display: flex; flex-direction: column; gap: 14px; flex-shrink: 0; margin-right: auto; }
 .f-logo { height: 48px; width: auto; object-fit: contain; }
 .f-logo.logo-jinaura { height: 64px; }
 .f-name { font-family: 'Montserrat', 'Noto Sans SC', sans-serif; }
