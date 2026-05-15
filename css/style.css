@@ -872,7 +872,7 @@ button { cursor: pointer; border: none; background: none; }
 }
 .footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr auto; gap: 48px; }
 .f-jinaura-col { display: flex; align-items: center; justify-content: center; }
-.f-jinaura-logo { width: 200px; height: auto; object-fit: contain; }
+.f-jinaura-logo { width: 600px; height: auto; object-fit: contain; }
 .f-brand { display: flex; flex-direction: column; gap: 14px; }
 .f-logo { height: 48px; width: auto; object-fit: contain; }
 .f-logo.logo-jinaura { height: 64px; }
