@@ -189,7 +189,10 @@ window.addEventListener('scroll', () => {
     const layer = document.createElement('div');
     layer.className = 'bubble-layer';
 
-    const count = window.innerWidth < 600 ? 6 : 12;
+    const isProducts = sec.classList.contains('products');
+    const count = window.innerWidth < 600
+      ? (isProducts ? 12 : 6)
+      : (isProducts ? 24 : 12);
     for (let i = 0; i < count; i++) {
       const span  = document.createElement('span');
       const size  = (Math.random() * 28 + 8).toFixed(1);   // 8–36 px
