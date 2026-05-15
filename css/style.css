@@ -875,6 +875,7 @@ button { cursor: pointer; border: none; background: none; }
 .f-jinaura-logo { width: 200px; height: auto; object-fit: contain; }
 .f-brand { display: flex; flex-direction: column; gap: 14px; }
 .f-logo { height: 48px; width: auto; object-fit: contain; }
+.f-logo.logo-jinaura { height: 64px; }
 .f-name { font-family: 'Montserrat', 'Noto Sans SC', sans-serif; }
 .f-name strong { font-size: .85rem; letter-spacing: 2px; color: var(--blue1); }
 .f-name span { font-size: .8rem; color: var(--text2); display: block; margin-top: 4px; }
