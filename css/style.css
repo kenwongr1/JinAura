@@ -870,9 +870,7 @@ button { cursor: pointer; border: none; background: none; }
   border-top: 1.5px solid rgba(0,140,200,0.2);
   padding: 68px 0 44px;
 }
-.footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr 2fr; gap: 48px; }
-.f-jinaura-col { display: flex; align-items: center; justify-content: center; }
-.f-jinaura-logo { width: 100%; max-width: 500px; height: auto; object-fit: contain; }
+.footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 48px; }
 .f-brand { display: flex; flex-direction: column; gap: 14px; }
 .f-logo { height: 48px; width: auto; object-fit: contain; }
 .f-logo.logo-jinaura { height: 64px; }
@@ -917,7 +915,6 @@ button { cursor: pointer; border: none; background: none; }
   .research-grid  { grid-template-columns: 1fr 1fr; }
   /* Footer: collapse 5-col to 3-col (hide jinaura logo col at tablet) */
   .footer-grid    { grid-template-columns: 1.2fr 1fr 1fr; gap: 32px; }
-  .f-jinaura-col  { display: none; }
 }
 @media (max-width: 768px) {
   .section { padding: 60px 0; }
@@ -1024,12 +1021,6 @@ button { cursor: pointer; border: none; background: none; }
   .f-brand {
     grid-column: 1 / -1;
   }
-  .f-jinaura-col {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .f-jinaura-logo { width: 80px; }
 
   /* ── About: reset CN padding-top on single-column mobile layout ── */
   [data-lang="cn"] .about-visual { padding-top: 0; }
@@ -1055,6 +1046,4 @@ button { cursor: pointer; border: none; background: none; }
   /* ── Footer: single column on tiny phones ── */
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
   .f-brand     { grid-column: 1 / -1; }
-  .f-jinaura-col { display: flex; align-items: center; justify-content: center; }
-  .f-jinaura-logo { width: 64px; }
 }
