@@ -127,6 +127,9 @@ button { cursor: pointer; border: none; background: none; }
 .logo-amerigroup {
   height: 64px;
 }
+.logo-jinaura {
+  height: 32px;
+}
 .logo-group {
   display: flex;
   align-items: center;
