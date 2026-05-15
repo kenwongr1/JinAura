@@ -1018,18 +1018,13 @@ button { cursor: pointer; border: none; background: none; }
 
   /* ── Footer: brand full-width, then 3 cols: Navigation | Research | JinAura logo ── */
   .footer-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
   .f-brand {
     grid-column: 1 / -1;
   }
-  .f-jinaura-col {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .f-jinaura-logo { width: 90px; }
+  .f-jinaura-col { display: none; }
 
   /* ── About: reset CN padding-top on single-column mobile layout ── */
   [data-lang="cn"] .about-visual { padding-top: 0; }
