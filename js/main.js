@@ -106,7 +106,7 @@ window.addEventListener('scroll', () => {
       this.r     = Math.random() * 18 + 6;
       this.vx    = (Math.random() - 0.5) * 0.35;
       this.vy    = -(Math.random() * 0.55 + 0.25);
-      this.alpha = Math.random() * 0.5 + 0.1;
+      this.alpha = Math.random() * 0.6 + 0.3;
       this.hue   = 195 + Math.random() * 30;   // sky-blue range
     }
     update() {
@@ -115,20 +115,48 @@ window.addEventListener('scroll', () => {
       if (this.y + this.r < 0) this.reset(false);
     }
     draw() {
-      // draw with highlight for glassy look
+      ctx.save();
+
+      // Almost-transparent interior — clear water bubble
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-      const g = ctx.createRadialGradient(
-        this.x - this.r * 0.3, this.y - this.r * 0.3, this.r * 0.1,
+      const fill = ctx.createRadialGradient(
+        this.x, this.y - this.r * 0.2, 0,
         this.x, this.y, this.r
       );
-      g.addColorStop(0, `hsla(${this.hue},90%,95%,${this.alpha})`);
-      g.addColorStop(1, `hsla(${this.hue},80%,70%,${this.alpha * 0.4})`);
-      ctx.fillStyle = g;
+      fill.addColorStop(0,   `rgba(255,255,255,${this.alpha * 0.04})`);
+      fill.addColorStop(0.6, `rgba(200,235,255,${this.alpha * 0.06})`);
+      fill.addColorStop(1,   `rgba(160,215,255,${this.alpha * 0.14})`);
+      ctx.fillStyle = fill;
       ctx.fill();
-      ctx.strokeStyle = `hsla(${this.hue},70%,85%,${this.alpha * 0.6})`;
-      ctx.lineWidth = 0.5;
+
+      // Thin bright rim
+      ctx.strokeStyle = `rgba(255,255,255,${this.alpha * 0.75})`;
+      ctx.lineWidth = 0.7;
       ctx.stroke();
+
+      // Upper-left specular highlight
+      const hx = this.x - this.r * 0.32, hy = this.y - this.r * 0.32;
+      const hr = this.r * 0.22;
+      ctx.beginPath();
+      ctx.arc(hx, hy, hr, 0, Math.PI * 2);
+      const hl = ctx.createRadialGradient(hx, hy, 0, hx, hy, hr);
+      hl.addColorStop(0, `rgba(255,255,255,${this.alpha * 0.9})`);
+      hl.addColorStop(1, `rgba(255,255,255,0)`);
+      ctx.fillStyle = hl;
+      ctx.fill();
+
+      // Bottom reflection glimmer
+      const bx = this.x + this.r * 0.2, by = this.y + this.r * 0.55;
+      ctx.beginPath();
+      ctx.arc(bx, by, this.r * 0.12, 0, Math.PI * 2);
+      const bl = ctx.createRadialGradient(bx, by, 0, bx, by, this.r * 0.12);
+      bl.addColorStop(0, `rgba(255,255,255,${this.alpha * 0.4})`);
+      bl.addColorStop(1, `rgba(255,255,255,0)`);
+      ctx.fillStyle = bl;
+      ctx.fill();
+
+      ctx.restore();
     }
   }
 
