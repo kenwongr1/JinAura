@@ -914,7 +914,9 @@ button { cursor: pointer; border: none; background: none; }
   .science-cards  { grid-template-columns: 1fr 1fr; }
   .benefits-grid  { grid-template-columns: 1fr 1fr; }
   .research-grid  { grid-template-columns: 1fr 1fr; }
+  /* Footer: collapse 5-col to 3-col (hide jinaura logo col at tablet) */
   .footer-grid    { grid-template-columns: 1.2fr 1fr 1fr; gap: 32px; }
+  .f-jinaura-col  { display: none; }
 }
 @media (max-width: 768px) {
   .section { padding: 60px 0; }
@@ -924,9 +926,12 @@ button { cursor: pointer; border: none; background: none; }
     padding: 12px 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   }
-  .nav-container { padding: 0 16px; gap: 12px; }
-  .nav-logo { height: 34px; }
-  .logo-amerigroup { height: 48px; }
+  .nav-container { padding: 0 16px; gap: 8px; }
+  .nav-logo { height: 28px; }
+  /* Scale down all 3 navbar logos so they fit on one line */
+  .logo-amerigroup { height: 36px; }
+  .logo-jinaura    { height: 22px; }
+  .logo-group      { gap: 6px; }
   .nav-overlay {
     display: none;
     position: fixed; inset: 0;
@@ -968,9 +973,10 @@ button { cursor: pointer; border: none; background: none; }
   .hamburger span { background: var(--text); }
   .navbar:not(.scrolled) .hamburger span { background: var(--text); } /* Ensure visibility on light bg */
   .lang-toggle {
-    padding: 4px 10px;
+    padding: 4px 8px;
     border-color: var(--border);
     color: var(--text);
+    font-size: .65rem;
   }
   .lang-toggle .divider { display: none; }
 
@@ -993,7 +999,20 @@ button { cursor: pointer; border: none; background: none; }
   .contact-grid  { grid-template-columns: 1fr; gap: 40px; }
   .form-row      { grid-template-columns: 1fr; }
 
-  /* ── Footer: brand full-width, then Navigation + Research in 2 cols ── */
+  /* ── Product: cans side-by-side on top row, details full-width below ── */
+  .product-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .product-layout .product-details {
+    grid-column: 1 / -1;
+  }
+  .product-image-wrap {
+    max-width: 140px;
+  }
+
+  /* ── Footer: brand full-width, then Navigation + Research in 2 cols ──
+     jinaura logo col already hidden at 1024px; keep it hidden here too   */
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 24px;
@@ -1001,6 +1020,10 @@ button { cursor: pointer; border: none; background: none; }
   .f-brand {
     grid-column: 1 / -1;
   }
+  .f-jinaura-col { display: none; }
+
+  /* ── About: reset CN padding-top on single-column mobile layout ── */
+  [data-lang="cn"] .about-visual { padding-top: 0; }
 }
 @media (max-width: 480px) {
   .hero-title { font-size: 1.9rem; }
@@ -1010,4 +1033,17 @@ button { cursor: pointer; border: none; background: none; }
   .footer-bottom p { font-size: .65rem; }
   .footer-bottom .disclaimer { font-size: .58rem; }
   .mobile-br { display: block; }
+
+  /* ── Navbar logos: further reduce at very small screens ── */
+  .logo-amerigroup { height: 28px; }
+  .logo-jinaura    { height: 18px; }
+  .nav-logo        { height: 24px; }
+  .logo-group      { gap: 4px; }
+
+  /* ── Product: stack can images smaller on tiny screens ── */
+  .product-image-wrap { max-width: 120px; }
+
+  /* ── Footer: single column on tiny phones ── */
+  .footer-grid { grid-template-columns: 1fr; }
+  .f-brand     { grid-column: 1; }
 }
