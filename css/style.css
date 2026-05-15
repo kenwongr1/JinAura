@@ -930,7 +930,7 @@ button { cursor: pointer; border: none; background: none; }
   .nav-container { padding: 0 16px; gap: 8px; }
   .nav-logo { height: 34px; }
   .logo-amerigroup { height: 48px; }
-  .logo-jinaura    { height: 16px; }
+  .logo-jinaura    { height: 8px; }
   .logo-group      { gap: 6px; }
   .nav-overlay {
     display: none;
@@ -1045,7 +1045,7 @@ button { cursor: pointer; border: none; background: none; }
 
   /* ── Navbar logos: further reduce at very small screens ── */
   .logo-amerigroup { height: 48px; }
-  .logo-jinaura    { height: 14px; }
+  .logo-jinaura    { height: 7px; }
   .nav-logo        { height: 34px; }
   .logo-group      { gap: 4px; }
 
@@ -1053,6 +1053,8 @@ button { cursor: pointer; border: none; background: none; }
   .product-image-wrap { max-width: 120px; }
 
   /* ── Footer: single column on tiny phones ── */
-  .footer-grid { grid-template-columns: 1fr; }
-  .f-brand     { grid-column: 1; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .f-brand     { grid-column: 1 / -1; }
+  .f-jinaura-col { display: flex; align-items: center; justify-content: center; }
+  .f-jinaura-logo { width: 64px; }
 }
