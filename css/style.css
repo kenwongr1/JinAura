@@ -870,7 +870,9 @@ button { cursor: pointer; border: none; background: none; }
   border-top: 1.5px solid rgba(0,140,200,0.2);
   padding: 68px 0 44px;
 }
-.footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 48px; }
+.footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr auto; gap: 48px; }
+.f-jinaura-col { display: flex; align-items: center; justify-content: center; }
+.f-jinaura-logo { width: 120px; height: auto; object-fit: contain; }
 .f-brand { display: flex; flex-direction: column; gap: 14px; }
 .f-logo { height: 48px; width: auto; object-fit: contain; }
 .f-name { font-family: 'Montserrat', 'Noto Sans SC', sans-serif; }
