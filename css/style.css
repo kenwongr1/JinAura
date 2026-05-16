@@ -913,8 +913,9 @@ button { cursor: pointer; border: none; background: none; }
   .science-cards  { grid-template-columns: 1fr 1fr; }
   .benefits-grid  { grid-template-columns: 1fr 1fr; }
   .research-grid  { grid-template-columns: 1fr 1fr; }
-  /* Footer: collapse 5-col to 3-col (hide jinaura logo col at tablet) */
-  .footer-grid    { grid-template-columns: 1.2fr 1fr 1fr; gap: 32px; }
+  /* Footer: brand full-width, nav + research below */
+  .footer-grid    { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .f-brand        { grid-column: 1 / -1; }
 }
 @media (max-width: 768px) {
   .section { padding: 60px 0; }
