@@ -277,6 +277,19 @@ button { cursor: pointer; border: none; background: none; }
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+.hero-jinaura-em {
+  height: 0.8em;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  filter: brightness(0) invert(1);
+}
+.inline-jinaura-logo {
+  height: 0.85em;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
 .hero-title .cn { font-family: 'Noto Sans SC', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); }
 .hero-sub {
   font-size: clamp(1rem, 2vw, 1.2rem);
