@@ -973,17 +973,17 @@ button { cursor: pointer; border: none; background: none; }
   .hamburger span { background: var(--text); }
   .navbar:not(.scrolled) .hamburger span { background: var(--text); } /* Ensure visibility on light bg */
   .lang-toggle {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 3px;
-    padding: 6px 10px;
+    gap: 1px;
+    padding: 5px 10px;
     border-color: var(--border);
     color: var(--text);
     font-size: .72rem;
   }
   .lang-toggle .l-en,
   .lang-toggle .l-cn { font-size: .72rem; line-height: 1.2; }
-  .lang-toggle .divider { display: inline; color: var(--text3); }
+  .lang-toggle .divider { display: none; }
 
   /* ── Hero stats ── */
   .hero-stats { flex-direction: column; padding: 20px; gap: 14px; }
