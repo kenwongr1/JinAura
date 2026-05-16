@@ -1035,8 +1035,8 @@ br.mob-break { display: none; }
   .product-features { justify-content: center; }
 
   /* ── Footer QR: centered ── */
-  .f-qr-row { justify-content: center; flex-wrap: wrap; }
-  .f-qr-img { width: 90px; height: 90px; }
+  .f-qr-row { justify-content: center; flex-wrap: nowrap; gap: 8px; }
+  .f-qr-img { width: 80px; height: 80px; }
   .f-lang-logo { width: 110px; }
   .f-lang-logo.cn { width: 138px; }
 
