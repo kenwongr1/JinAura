@@ -875,6 +875,7 @@ button { cursor: pointer; border: none; background: none; }
 .f-brand { display: flex; flex-direction: column; gap: 14px; grid-column: 1 / -1; }
 .f-logo { height: 48px; width: auto; object-fit: contain; }
 .f-logo.logo-jinaura { height: 64px; }
+.f-jinaura-word { display: none; width: 120px; height: auto; }
 .f-name { font-family: 'Montserrat', 'Noto Sans SC', sans-serif; }
 .f-name strong { font-size: .85rem; letter-spacing: 2px; color: var(--blue1); }
 .f-name span { font-size: .8rem; color: var(--text2); display: block; margin-top: 4px; }
@@ -929,7 +930,7 @@ button { cursor: pointer; border: none; background: none; }
   .nav-container { padding: 0 16px; gap: 8px; }
   .nav-logo { height: 30px; }
   .logo-amerigroup { height: 42px; }
-  .logo-jinaura    { width: 120px; height: auto; }
+  .logo-jinaura    { width: 80px; height: auto; }
   .logo-group      { gap: 6px; }
   .nav-overlay {
     display: none;
@@ -1023,6 +1024,9 @@ button { cursor: pointer; border: none; background: none; }
   .f-brand {
     grid-column: 1 / -1;
   }
+  /* ── Footer logos: shrink LKS by 60%, show JinAura wordmark ── */
+  .f-logo-lks    { height: 19px; }
+  .f-jinaura-word { display: block; width: 120px; height: auto; }
 
   /* ── About: reset CN padding-top on single-column mobile layout ── */
   [data-lang="cn"] .about-visual { padding-top: 0; }
@@ -1038,7 +1042,7 @@ button { cursor: pointer; border: none; background: none; }
 
   /* ── Navbar logos: reduce at very small screens while keeping visible ── */
   .logo-amerigroup { height: 38px; }
-  .logo-jinaura    { width: 120px; height: auto; }
+  .logo-jinaura    { width: 80px; height: auto; }
   .nav-logo        { height: 27px; }
   .logo-group      { gap: 4px; }
 
