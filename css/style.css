@@ -1038,6 +1038,7 @@ br.mob-break { display: none; }
   .f-qr-row { justify-content: center; flex-wrap: wrap; }
   .f-qr-img { width: 90px; height: 90px; }
   .f-lang-logo { width: 110px; }
+  .f-lang-logo.cn { width: 138px; }
 
   /* ── Footer Navigation & Research Papers: centered, tighter spacing ── */
   .f-col { text-align: center; }
