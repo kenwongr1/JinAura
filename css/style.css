@@ -1022,6 +1022,10 @@ br.mob-break { display: none; }
   /* ── Footer QR: centered ── */
   .f-qr-row { justify-content: center; }
 
+  /* ── Footer Navigation & Research Papers: centered ── */
+  .f-col { text-align: center; }
+  .f-col ul { align-items: center; }
+
   /* ── Lang toggle: inverted (blue bg, white text) ── */
   .lang-toggle {
     background: var(--blue1);
