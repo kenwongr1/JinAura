@@ -884,8 +884,8 @@ button { cursor: pointer; border: none; background: none; }
   border-top: 1.5px solid rgba(0,140,200,0.2);
   padding: 68px 0 44px;
 }
-.footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: flex-start; }
-.f-brand { display: flex; flex-direction: column; gap: 14px; grid-column: 1 / -1; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; align-items: flex-start; }
+.f-brand { display: flex; flex-direction: column; gap: 14px; }
 .f-logo { height: 48px; width: auto; object-fit: contain; }
 .f-logo.logo-jinaura { height: 64px; }
 .f-jinaura-word { display: none; width: 120px; height: auto; }
