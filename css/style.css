@@ -1097,7 +1097,7 @@ br.mob-break { display: none; }
   }
   /* ── Footer logos: shrink LKS by 60%, show JinAura wordmark ── */
   .f-logo-lks    { height: 32px; }
-  .f-jinaura-word { display: none; }
+  .f-jinaura-word { display: block; height: 32px; width: auto; }
 
   /* ── About: reset CN padding-top on single-column mobile layout ── */
   [data-lang="cn"] .about-visual { padding-top: 0; }
