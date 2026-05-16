@@ -925,9 +925,9 @@ button { cursor: pointer; border: none; background: none; }
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   }
   .nav-container { padding: 0 16px; gap: 8px; }
-  .nav-logo { height: 34px; }
-  .logo-amerigroup { height: 48px; }
-  .logo-jinaura    { height: 8px; }
+  .nav-logo { height: 30px; }
+  .logo-amerigroup { height: 42px; }
+  .logo-jinaura    { height: 24px; }
   .logo-group      { gap: 6px; }
   .nav-overlay {
     display: none;
@@ -970,17 +970,17 @@ button { cursor: pointer; border: none; background: none; }
   .hamburger span { background: var(--text); }
   .navbar:not(.scrolled) .hamburger span { background: var(--text); } /* Ensure visibility on light bg */
   .lang-toggle {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 1px;
-    padding: 4px 8px;
+    gap: 3px;
+    padding: 6px 10px;
     border-color: var(--border);
     color: var(--text);
-    font-size: .68rem;
+    font-size: .72rem;
   }
   .lang-toggle .l-en,
-  .lang-toggle .l-cn { font-size: .68rem; line-height: 1.2; }
-  .lang-toggle .divider { display: none; }
+  .lang-toggle .l-cn { font-size: .72rem; line-height: 1.2; }
+  .lang-toggle .divider { display: inline; color: var(--text3); }
 
   /* ── Hero stats ── */
   .hero-stats { flex-direction: column; padding: 20px; gap: 14px; }
@@ -1034,10 +1034,10 @@ button { cursor: pointer; border: none; background: none; }
   .footer-bottom .disclaimer { font-size: .58rem; }
   .mobile-br { display: block; }
 
-  /* ── Navbar logos: further reduce at very small screens ── */
-  .logo-amerigroup { height: 48px; }
-  .logo-jinaura    { height: 7px; }
-  .nav-logo        { height: 34px; }
+  /* ── Navbar logos: reduce at very small screens while keeping visible ── */
+  .logo-amerigroup { height: 38px; }
+  .logo-jinaura    { height: 20px; }
+  .nav-logo        { height: 27px; }
   .logo-group      { gap: 4px; }
 
   /* ── Product: stack can images smaller on tiny screens ── */
