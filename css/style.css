@@ -1036,6 +1036,7 @@ br.mob-break { display: none; }
 
   /* ── Footer QR: centered ── */
   .f-qr-row { justify-content: center; }
+  .f-lang-logo { width: 110px; }
 
   /* ── Footer Navigation & Research Papers: centered, tighter spacing ── */
   .f-col { text-align: center; }
