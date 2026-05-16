@@ -889,7 +889,7 @@ button { cursor: pointer; border: none; background: none; }
 .f-brand { display: flex; flex-direction: column; gap: 14px; }
 .f-logo { height: 48px; width: auto; object-fit: contain; }
 .f-logo.logo-jinaura { height: 64px; }
-.f-jinaura-word { display: none; width: 120px; height: auto; }
+.f-jinaura-word { display: block; width: 120px; height: auto; }
 .f-name { font-family: 'Montserrat', 'Noto Sans SC', sans-serif; }
 .f-name strong { font-size: .85rem; letter-spacing: 2px; color: var(--blue1); }
 .f-name span { font-size: .8rem; color: var(--text2); display: block; margin-top: 4px; }
@@ -1093,7 +1093,7 @@ br.mob-break { display: none; }
   }
   /* ── Footer logos: shrink LKS by 60%, show JinAura wordmark ── */
   .f-logo-lks    { height: 32px; }
-  .f-jinaura-word { display: block; width: 100px; height: auto; }
+  .f-jinaura-word { display: none; }
 
   /* ── About: reset CN padding-top on single-column mobile layout ── */
   [data-lang="cn"] .about-visual { padding-top: 0; }
