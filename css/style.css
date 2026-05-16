@@ -291,6 +291,7 @@ button { cursor: pointer; border: none; background: none; }
   vertical-align: middle;
 }
 .hero-title .cn { font-family: 'Noto Sans SC', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); }
+.hero-title-sub { font-size: 0.65em; font-weight: 700; }
 .hero-sub {
   font-size: clamp(1rem, 2vw, 1.2rem);
   color: rgba(255,255,255,0.85);
