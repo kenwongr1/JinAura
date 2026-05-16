@@ -1035,7 +1035,8 @@ br.mob-break { display: none; }
   .product-features { justify-content: center; }
 
   /* ── Footer QR: centered ── */
-  .f-qr-row { justify-content: center; }
+  .f-qr-row { justify-content: center; flex-wrap: wrap; }
+  .f-qr-img { width: 90px; height: 90px; }
   .f-lang-logo { width: 110px; }
 
   /* ── Footer Navigation & Research Papers: centered, tighter spacing ── */
