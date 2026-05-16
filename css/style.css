@@ -197,8 +197,8 @@ button { cursor: pointer; border: none; background: none; }
 }
 .lang-toggle:hover { border-color: var(--white); color: var(--white); background: rgba(255,255,255,0.2); }
 .navbar.scrolled .lang-toggle {
-  border-color: var(--border);
-  color: var(--text2);
+  border-color: var(--accent);
+  color: var(--accent);
   background: transparent;
 }
 .navbar.scrolled .lang-toggle:hover { border-color: var(--blue2); color: var(--blue1); }
