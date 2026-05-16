@@ -1026,7 +1026,7 @@ button { cursor: pointer; border: none; background: none; }
   }
   /* ── Footer logos: shrink LKS by 60%, show JinAura wordmark ── */
   .f-logo-lks    { height: 32px; }
-  .f-jinaura-word { display: block; width: 120px; height: auto; }
+  .f-jinaura-word { display: block; width: 100px; height: auto; }
 
   /* ── About: reset CN padding-top on single-column mobile layout ── */
   [data-lang="cn"] .about-visual { padding-top: 0; }
