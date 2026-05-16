@@ -285,7 +285,7 @@ button { cursor: pointer; border: none; background: none; }
   filter: brightness(0) invert(1);
 }
 .inline-jinaura-logo {
-  height: 0.85em;
+  height: 1.2em;
   width: auto;
   display: inline-block;
   vertical-align: middle;
