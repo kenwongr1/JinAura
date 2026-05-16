@@ -1038,7 +1038,7 @@ button { cursor: pointer; border: none; background: none; }
 
   /* ── Navbar logos: reduce at very small screens while keeping visible ── */
   .logo-amerigroup { height: 38px; }
-  .logo-jinaura    { width: 100px; height: auto; }
+  .logo-jinaura    { width: 120px; height: auto; }
   .nav-logo        { height: 27px; }
   .logo-group      { gap: 4px; }
 
