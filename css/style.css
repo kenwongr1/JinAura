@@ -278,7 +278,7 @@ button { cursor: pointer; border: none; background: none; }
   background-clip: text;
 }
 .hero-jinaura-em {
-  height: 0.8em;
+  height: 0.96em;
   width: auto;
   display: inline-block;
   vertical-align: middle;
