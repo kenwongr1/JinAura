@@ -897,7 +897,7 @@ button { cursor: pointer; border: none; background: none; }
 .f-qr-row { display: flex; gap: 16px; margin-top: 4px; align-items: center; }
 .f-qr-item { display: flex; flex-direction: column; align-items: center; gap: 6px; }
 .f-lang-logo { height: 100px; width: auto; object-fit: contain; }
-.f-lang-logo.en { width: 220px; height: auto; }
+.f-lang-logo.en { width: 286px; height: auto; }
 .f-lang-logo.cn { width: 220px; height: auto; }
 .f-qr-img { width: 120px; height: 120px; object-fit: contain; border-radius: 8px; border: 1px solid var(--border); background: #fff; padding: 4px; }
 .f-qr-item span { font-size: .72rem; color: var(--text3); }
