@@ -1022,9 +1022,10 @@ br.mob-break { display: none; }
   /* ── Footer QR: centered ── */
   .f-qr-row { justify-content: center; }
 
-  /* ── Footer Navigation & Research Papers: centered ── */
+  /* ── Footer Navigation & Research Papers: centered, tighter spacing ── */
   .f-col { text-align: center; }
-  .f-col ul { align-items: center; }
+  .f-col ul { align-items: center; gap: 6px; }
+  .f-col h5 { margin-bottom: 8px; }
 
   /* ── Lang toggle: inverted (blue bg, white text) ── */
   .lang-toggle {
@@ -1070,7 +1071,8 @@ br.mob-break { display: none; }
   /* ── Footer: f-brand full-width, Navigation + Research below ── */
   .footer-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    row-gap: 20px;
+    column-gap: 8px;
   }
   .f-brand {
     grid-column: 1 / -1;
